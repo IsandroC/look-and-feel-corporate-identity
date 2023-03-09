@@ -1,0 +1,153 @@
+:root {
+    --text-color-white: #ffffff;
+    --primary-blue: #090940;
+    --primary-yellow: #feb51e;
+    --secondary-blue: #31439c;
+    --secondary-orange: #fe6f07;
+    --gray-shade-1: #625c51;
+    --gray-shade-4: #f9f8f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 20px;
+    font-family: rigid-square, sans-serif;
+}
+
+/* text styling */
+
+h1 {
+  font-size: 63.15px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+h2 {
+  font-size: 47.37px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+/* nav styling */
+nav {
+  padding: 1rem 0.5rem 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem -0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li > a {
+  display: inline-block;
+  padding: 0.75rem 0.75rem;
+  margin: 1.25rem 1.25rem;
+}
+
+/* button styling */
+
+button {
+  color: var(--primary-blue);
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 0.75rem 1rem;
+  border: none;
+  background-size: 400%;
+  transition: ease-in;
+  cursor: pointer;
+}
+
+/* header */
+
+.header__navbar__item .account-icon {
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 1rem;
+}
+
+.header__navbar__item a {
+  color: var(--primary-blue);
+}
+
+header > p {
+  background-color: var(--secondary-blue);
+  color: var(--text-color-white);
+  margin: 0rem -0.5rem;
+  padding-left: 7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* Main */
+
+/* navbar */
+
+.main__navbar {
+  background-color: var(--gray-shade-4);
+}
+
+.main__navbar__item a {
+  color: var(--secondary-blue);
+}
+
+/* image slider */
+
+.image-slider{
+  display: flex;
+  padding-left: 0.8rem;
+}
+
+.image-slider > a {
+  display: contents;
+}
+
+.image-slider > img {
+  max-height: 50rem;
+  max-width: 70rem;
+  width: 100%;
+}
+
+/* image slider buttons */
+
+.vorige-button, .volgende-button {
+  background-color: var(--secondary-orange);
+  color: var(--text-color-white);
+  border: none;
+  height: 2.5rem;
+  padding: 0.5rem 0.6rem 0.3rem 0.6rem;
+  align-self: center;
+}
+
+/* "information" article */
+
+article {
+  padding: 0 3rem;
+}
+
+/* reageer en upload buttons */
+
+.reageer-button, .upload-button{
+  background-image: linear-gradient(90deg, var(--primary-yellow) 50%, var(--primary-blue) 50%);
+  margin: 2rem -2rem 2rem 4rem;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--gray-shade-1);
+  height: 6rem;
+  width: 100%;
+  margin: 3rem 0 0 0
+}
+
+footer > p {
+  color: var(--text-color-white);
+  font-weight: 700;
+  line-height: 1.2rem;
+  padding: 2.5rem 0 0 3rem;
+}
